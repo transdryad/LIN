@@ -2,4 +2,4 @@
 
 What if programming was just french?
 
-Credit to [](https://github.com/Thecoolsim/French-Scrabble-ODS8) for the french scrabble word list.
+Credit to [here](https://github.com/Thecoolsim/French-Scrabble-ODS8) for the french scrabble word list.
