@@ -12,6 +12,8 @@ dependencies = [
 exe = executable(
   'LIN',
   'src/main.cpp',
+  'src/token.hpp',
+  'src/token.cpp',
   install : true,
   dependencies : dependencies,
 )
