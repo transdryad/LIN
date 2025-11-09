@@ -11,12 +11,18 @@ void run(std::string source) {
     
 }
 
+void print_words() {
+    for (std::string str : word_list) {
+        std::cout << str << std::endl;
+    }
+}
+
 int main(int argc, char **argv) {
     if (argc != 2) {
         std::cout << argv[0] << " takes one argument: the file to be compiled.\n";
         return 1;
     }
-    std::string input_file = 
+    std::string input_file = argv[1]; 
     std::cout << "This is project " << PROJECT_NAME << ".\n";
 
     std::ifstream wordlists("src/fr.txt"); //read wordlist into vector
@@ -25,9 +31,7 @@ int main(int argc, char **argv) {
     while (getline(wordlists, s)) word_list.push_back(s);
     wordlists.close();
 
-    for (std::string str : word_list) {
-        std::cout << str << std::endl;
-    }
-
+    //print_words();
+    
     return 0;
 }
